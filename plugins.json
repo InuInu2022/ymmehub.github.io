@@ -1,0 +1,16 @@
+{
+    "test":[{
+            "id": "test",
+            "name": "テストプラグイン",
+            "author": "作者名",
+            "desc": "テストです。<br>テストです。",
+            "file": "test.txt",
+            "img": "0"
+    }],
+    "yukkuri":[{
+            "name": "ゆっくりプラグイン",
+            "author": "Rainkasa",
+            "desc": "HTMLタグを記入できちゃいます。<br>そのためbrもつかえます。",
+            "file": "test.txt"
+    }]
+}

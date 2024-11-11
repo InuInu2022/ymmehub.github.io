@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='ja' class="has-navbar-fixed-bottom">
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name='description' content='YMM4の非公式プラグインストアです。すべて無料です!'>
+        <link rel='apple-touch-icon' sizes='180x180' href='img/favicon/apple-touch-icon.png'>
+        <link rel='icon' type='image/png' sizes='32x32' href='img/favicon/32px.png'>
+        <link rel='icon' type='image/png' sizes='16x16' href='img/favicon/16px.png'>
+        <!-- 以下OGP -->
+        <meta property='og:description' content='YMM4の非公式プラグインストアです。すべて無料です!'>
+        <meta property='og:title' content='YMM Hub'>
+        <meta property='og:image' content=''>
+        <meta property='og:image:width' content='画像の幅px'>
+        <meta property='og:image:height' content='画像の高さpx'>
+        <meta property='og:type' content='website'>
+        <!-- <meta property='og:url' content='https://'> -->
+        <!-- OGP終わり -->
+        <title>YMME Hub</title>
+        <!-- ライブラリ等 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='css/style.css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="module" src="/js/script.js"></script>
+    </head>
+    <body>
+        <!-- 内容を記述 -->
+        <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <!-- ロゴ -->
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        Home
+                    </a>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                </div>
+            </div>
+        </nav>
+        <section class="hero is-success mb-5">
+            <div class="hero-body">
+                <p class="title">YMME Hub</p>
+                <p class="subtitle">YMM4の非公式プラグインストア</p>
+            </div>
+        </section>
+        <section class="section">
+            <h1 class="title" id="title">PluginName</h1>
+            <p class="subtitle" id="author">Author</p>
+            <hr>
+            <p id="description"></p>
+            <hr>
+            <div id="img_item">
+            <h2 class="title is-4">画像やアセット</h2>
+            <p class="subtitle">制作者が追加したアセットや画像を閲覧できます。</p>
+            <div id="img_grid" class="fixed-grid has-2-cols">
+                <div class="grid">
+                    <img src="https://placehold.jp/480x270.png" class="img1" alt="画像" class="cell">
+                    <img src="https://placehold.jp/480x270.png" class="img2" alt="画像" class="cell">
+                    <img src="https://placehold.jp/480x270.png" class="img3" alt="画像" class="cell">
+                    <img src="https://placehold.jp/480x270.png" class="img4" alt="画像" class="cell">
+                </div>
+            </div>
+            <hr>
+            </div>
+            <a id="download" class="button is-success">ダウンロードする</a>
+        </section>
+    </body>
+</html>
