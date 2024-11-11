@@ -7,7 +7,7 @@ function getParam(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-$(function () {
+  $(window).on('load', function () {
         const file = '/json/' + getParam("file") + '.json';
         $.getJSON(file, (data) => {
             // JSONデータを受信した後に実行する処理
