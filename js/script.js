@@ -20,28 +20,38 @@ function getParam(name, url) {
             console.log(data.img);
             console.log(data.id);
             console.log(download);
+            console.log(data.img);
             console.log('/file/img/' + data.id + '/1.png');
             switch (data.img) {
                 case "0":
                     $("#img_item").html("<div></div>");
                     break;
                 case "1":
-                    $(".img1").html('<img src="' + '/file/img/' + data.id + '/1.png' + '" id="img1" alt="画像" class="cell" width="480" height="270">');
+                    $("#img1").attr('src', '/file/img/' + data.id +'/1.png');
+                    for (let img = 2; img < 5; img++) {
+                        $("#img" + img).remove();
+                    }
                     break;
                 case "2":
-                    $(".img1").html('<img src="' + '/file/img/' + data.id + '/1.png' + '" id="img1" alt="画像" class="cell"> width="480" height="270"');
-                    $(".img2").html('<img src="' + '/file/img/' + data.id + '/2.png' + '" id="img2" alt="画像" class="cell"> width="480" height="270"');
+                    for (let img = 1; img < 3; img++) {
+                        $("#img" + img).attr("src", "/file/img/" + data.id + "/" + img + ".png");
+                    }
+                    for (let img = 3; img < 5; img++) {
+                        $("#img" + img).remove();
+                    }
                     break;
                 case "3":
-                    $(".img1").html('<img src="' + '/file/img/' + data.id + '/1.png' + '" id="img1" alt="画像" class="cell"> width="480" height="270"');
-                    $(".img2").html('<img src="' + '/file/img/' + data.id + '/2.png' + '" id="img2" alt="画像" class="cell"> width="480" height="270"');
-                    $(".img3").html('<img src="' + '/file/img/' + data.id + '/3.png' + '" id="img3" alt="画像" class="cell"> width="480" height="270"');
+                    for (let img = 1; img < 4; img++) {
+                        $("#img" + img).attr("src", "/file/img/" + data.id + "/" + img + ".png");
+                    }
+                    for (let img = 4; img < 5; img++) {
+                        $("#img" + img).remove();
+                    }
                     break;
                 case "4":
-                    $(".img1").html('<img src="' + '/file/img/' + data.id + '/1.png' + '" id="img1" alt="画像" class="cell"> width="480" height="270"');
-                    $(".img2").html('<img src="' + '/file/img/' + data.id + '/2.png' + '" id="img2" alt="画像" class="cell"> width="480" height="270"');
-                    $(".img3").html('<img src="' + '/file/img/' + data.id + '/3.png' + '" id="img3" alt="画像" class="cell"> width="480" height="270"');
-                    $(".img4").html('<img src="' + '/file/img/' + data.id + '/4.png' + '" id="img4" alt="画像" class="cell"> width="480" height="270"');
+                    for (let img = 1; img < 5; img++) {
+                        $("#img" + img).attr("src", "/file/img/" + data.id + "/" + img + ".png");
+                    }
                     break;
                 default:
                     break;

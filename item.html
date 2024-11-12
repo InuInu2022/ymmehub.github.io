@@ -23,8 +23,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
         <link rel='stylesheet' href='css/style.css'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="/js/script.js"></script>
     </head>
     <body>
         <!-- 内容を記述 -->
@@ -64,17 +62,20 @@
             <div id="img_item">
             <h2 class="title is-4">画像やアセット</h2>
             <p class="subtitle">制作者が追加したアセットや画像を閲覧できます。</p>
-            <div id="img_grid" class="fixed-grid has-2-cols">
-                <div class="grid">
-                    <img src="https://placehold.jp/480x270.png" class="img1" alt="画像" class="cell">
-                    <img src="https://placehold.jp/480x270.png" class="img2" alt="画像" class="cell">
-                    <img src="https://placehold.jp/480x270.png" class="img3" alt="画像" class="cell">
-                    <img src="https://placehold.jp/480x270.png" class="img4" alt="画像" class="cell">
+                <div class="grid img-grid">
+                    <img id="img1" src="https://placehold.jp/480x270.png" alt="画像" class="cell">
+                    <img id="img2" src="https://placehold.jp/480x270.png" alt="画像" class="cell">
+                    <img id="img3" src="https://placehold.jp/480x270.png" alt="画像" class="cell">
+                    <img id="img4" src="https://placehold.jp/480x270.png" alt="画像" class="cell">
                 </div>
-            </div>
             <hr>
             </div>
             <a id="download" class="button is-success">ダウンロードする</a>
         </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="/js/script.js"></script>
+        <script src="https://utteranc.es/client.js" repo="ymmehub/ymmehub.github.io" issue-term="title"
+            theme="preferred-color-scheme" crossorigin="anonymous" async>
+        </script>
     </body>
 </html>
