@@ -23,29 +23,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
         <link rel='stylesheet' href='css/style.css'>
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css">
+        </head>
     <body>
         <!-- 内容を記述 -->
         <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <!-- ロゴ -->
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item">
-                        Home
-                    </a>
-                    </div>
-                </div>
-                <div class="navbar-end">
-                </div>
-            </div>
         </nav>
         <section class="hero is-success mb-5">
             <div class="hero-body">
@@ -55,87 +40,14 @@
         </section>
         <div>
             <section class="section">
-                <h1 class="title">おすすめのプラグイン</h1>
-                <h2 class="subtitle">ランダムに表示されるあなたのためのプラグインです。</h2>
-                <div class="grid">
-                    <a href="#" class="cell">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image" />
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img src="https://bulma.io/assets/images/placeholders/96x96.png" alt="Placeholder image" />
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="title is-4">Title</p>
-                                        <small class="subtitle is-6">Author</small>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <p>ここに説明を記入。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="cell">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image" />
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img src="https://bulma.io/assets/images/placeholders/96x96.png" alt="Placeholder image" />
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="title is-4">Title</p>
-                                        <small class="subtitle is-6">Author</small>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <p>ここに説明を記入。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="cell">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image" />
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img src="https://bulma.io/assets/images/placeholders/96x96.png" alt="Placeholder image" />
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="title is-4">Title</p>
-                                        <small class="subtitle is-6">Author</small>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <p>ここに説明を記入。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    </div>
+                <h1 class="title">すべてのプラグイン</h1>
+                <h2 class="subtitle">YMME Hubに存在するプラグインです。</h2>
+                <div class="columns" id="grid"></div>
             </div>
             </section>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="/js/loadheader.js"></script>
+        <script src="/js/cardgen.js"></script>
     </body>
 </html>

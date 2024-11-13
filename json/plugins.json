@@ -1,0 +1,10 @@
+{
+    "plugins": [{
+            "id": "NearestScaleEffect",
+            "name": "ニアレストネイバー拡大",
+            "author": "kotolin",
+            "desc": "画像をニアレストネイバー法で拡大するプラグインです。<br>使い方<br>・エフェクトを拡大したい画像につけてトラックバーを操作してください。単位は%です",
+            "file": "NearestScaleEffect.ymme",
+            "img": "1"
+    }]
+}

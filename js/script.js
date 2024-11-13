@@ -7,13 +7,13 @@ function getParam(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-  $(window).on('load', function () {
-        const file = '/json/' + getParam("file") + '.json';
-        $.getJSON(file, (data) => {
+$(window).on('load', function () {
+    const prm = getParam("file");
+        $.getJSON(`/json/${prm}.json`, (data) => {
             // JSONデータを受信した後に実行する処理
             document.title = "YMME Hub" + data.name;
             $("#title").text(data.name);
-            $("#author").text(data.author);
+            $("#author").text(data.name);
             $("#description").html("<p>" + data.desc + "</p>");
             const download = "/file/ymme/" + data.file;
             $("#download").html('<a class="button is-success" href="' + "/file/ymme/" + data.file + '" download>ダウンロードする</a>');
@@ -57,4 +57,11 @@ function getParam(name, url) {
                     break;
             }
         });
+    $(".navbar-burger").click(function () {
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+
+    });
 })
