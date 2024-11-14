@@ -1,10 +1,20 @@
 {
-    "plugins": [{
+    "plugins": [
+        {
             "id": "NearestScaleEffect",
             "name": "ニアレストネイバー拡大",
             "author": "kotolin",
             "desc": "画像をニアレストネイバー法で拡大するプラグインです。<br>使い方<br>・エフェクトを拡大したい画像につけてトラックバーを操作してください。単位は%です",
             "file": "NearestScaleEffect.ymme",
             "img": "1"
-    }]
+        },
+        {
+            "id": "YMM4SquirclePlugin",
+            "name": "YMM4 スクワークル角丸プラグイン",
+            "author": "InuInu",
+            "desc": "スクワークル（Squircle）と呼ばれる角丸を描画する図形プラグインです。<br>このプラグインでは幅・高さ・色・角丸の係数と3種類の計算式の違いのオプションに対応しています。<br>背景画像や線などは対応していないので図形エフェクトを代わりに使ってください。",
+            "file": "YMM4SquirclePlugin.ymme",
+            "img": "2"
+        }
+    ]
 }
