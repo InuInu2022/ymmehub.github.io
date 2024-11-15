@@ -11,7 +11,7 @@ $(window).on('load', function () {
     const prm = getParam("file");
         $.getJSON(`/json/${prm}.json`, (data) => {
             // JSONデータを受信した後に実行する処理
-            document.title = "YMME Hub" + data.name;
+            document.title = `YMME Hub - ${data.name}`;
             $("#title").text(data.name);
             $("#author").text(data.name);
             $("#description").html("<p>" + data.desc + "</p>");

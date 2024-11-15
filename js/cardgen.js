@@ -3,8 +3,9 @@ $(window).on('load', function () {
     $.getJSON("/json/plugins.json", (data) => {
         for (let index = 0; index < data.plugins.length; index++) {
             $("#grid").append(
-                `<div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd"><a id="cell" href="/item.html?file=${data.plugins[index].id}">
-                    <div class="card">
+                `<div class="column is-half">
+                <a id="cell" href="/item.html?file=${data.plugins[index].id}">
+                    <div class="card is-fullheight">
                         <div class="card-image">
                             <figure class="image is-2by2 is-one-third">
                                 <img src="/file/img/${data.plugins[index].id}/1.png" alt="thunbnail"  />
