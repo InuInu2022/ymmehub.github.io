@@ -1,6 +1,6 @@
 console.log("loaded");
 $(window).on('load', function () {
-    $.getJSON("/json/plugins.json", (data) => {
+    $.getJSON("https://github.com/ymmehub/ymmehub.github.io/blob/main/json/plugins.json", (data) => {
         for (let index = 0; index < data.plugins.length; index++) {
             $("#grid").append(
                 `<div class="column is-half">
