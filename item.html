@@ -35,30 +35,34 @@
                 <p class="subtitle">YMM4の非公式プラグインストア</p>
             </div>
         </section>
-        <section class="section">
-            <h1 class="title" id="title">PluginName</h1>
-            <p class="subtitle" id="author">Author</p>
-            <hr>
-            <p id="description"></p>
-            <hr>
-            <div id="img_item">
-            <h2 class="title is-4">画像やアセット</h2>
-            <p class="subtitle">制作者が追加したアセットや画像を閲覧できます。</p>
-                <div class="grid img-grid">
-                    <img id="img1" src="https://placehold.jp/480x270.png" alt="画像" class="cell">
-                    <img id="img2" src="https://placehold.jp/480x270.png" alt="画像" class="cell">
-                    <img id="img3" src="https://placehold.jp/480x270.png" alt="画像" class="cell">
-                    <img id="img4" src="https://placehold.jp/480x270.png" alt="画像" class="cell">
-                </div>
-            <hr>
+        <div class="columns">
+            <div class="column is-narrow">
+                <section class="section" id="narrow-side">
+                    <h1 class="title" id="title">PluginName</h1>
+                    <p class="subtitle" id="author">Author</p>
+                    <a id="download" class="button is-success">ダウンロードする</a>
+                    <hr>
+                    <h2 class="title is-4">画像やアセット</h2>
+                    <p class="subtitle">制作者が追加したアセットや画像を閲覧できます。</p>
+                    <div class="fixed-grid has-1-cols">
+                        <div class="grid img-grid">
+                            <img id="img1" src="" alt="画像" class="cell is-2by2">
+                            <img id="img2" src="" alt="画像" class="cell is-2by2">
+                            <img id="img3" src="" alt="画像" class="cell is-2by2">
+                            <img id="img4" src="" alt="画像" class="cell is-2by2">
+                        </div>
+                    </div>
+                </section>
             </div>
-            <a id="download" class="button is-success">ダウンロードする</a>
-        </section>
+            <div class="column">
+                <section class="section">
+                    <h1 class="title is-4">説明</h1>
+                    <p id="description"></p>
+                </section>
+            </div>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="/js/itemload.js"></script>
         <script src="/js/loadheader.js"></script>
-        <script src="https://utteranc.es/client.js" repo="ymmehub/ymmehub.github.io" issue-term="url"
-            theme="preferred-color-scheme" crossorigin="anonymous" async>
-        </script>
     </body>
 </html>
